@@ -4,123 +4,120 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Netflix</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Sorts+Mill+Goudy:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>netflix</title>
   </head>
 
   <body>
-    <main class="background-container--image1">
-      
-    <div class="container">
-      <div class="h3">
-        <h1>
-          <span class="letters_net"> <span class="letter_n">N</span>ET</span
-          ><span class="letters_flix"><span class="letter_f">F</span>LIX</span>
-        </h1>
+    <div id="container">
+      <header id="header">
+        <h1 id="title">NET<span>FLIX</span></h1>
+        <h3 id="description">
+          Thank you for signing up to Netflix.Tell me more about yourself.
+        </h3>
+      </header>
 
-        <h2>
-          Thank you for singning up at Netflix.Tell US more about your self
-        </h2>
-      </div>
-
-      <form action="">
-        <div class="anadiv">
-          <div>
-            <label for="Name">Name</label>
+      <section id="survey-form-container">
+        <form action="result.html" method="get">
+          <div class="input-box">
+            <label for="name">Name</label>
             <br />
             <input
-              class="cik"
               type="text"
-              name="Name"
-              id="Name"
-              placeholder="Enter Your Name"
-              required
+              name="name"
+              id="name"
+              placeholder="enter your name"
             />
           </div>
-          <div>
-            <label for="Age">Age</label>
+
+          <div class="input-box">
+            <label for="age">Age</label>
+            <br />
+            <input type="number" name="Age" id="age" placeholder="age" />
+          </div>
+
+          <div class="input-box">
+            <label for="email">Email</label>
             <br />
             <input
-              class="cik"
-              type="Number"
-              name="Age"
-              id="Age"
-              placeholder="Age"
-              required
+              type="email"
+              name="email"
+              id="email"
+              placeholder="enter your Email"
             />
           </div>
-          <div>
-            <label for="Email">Email</label>
+
+          <div class="input-box">
+            <label for="">Content Type</label>
             <br />
-            <input
-              class="cik"
-              type="Email"
-              name="Email"
-              id="Email"
-              placeholder="Enter Your email"
-              required
-            />
-          </div>
-          <div>
-            <label for="Content type">Content type</label>
-            <br />
-            <select class="üç" name="content type" id="Content type">
-              <option value="Select type">Select type</option>
-              <option value="Documantry">Documantry</option>
-              <option value="Movies">Movies</option>
-              <option value="Series">Series</option>
+            <select name="content" id="dropdown">
+              <option value="movies">Movies</option>
+              <option value="series" selected>Series</option>
+              <option value="tv shows">TV Shows</option>
             </select>
           </div>
-        </div>
-        <div class="anadiv">
-          <label for="Movie type">Movie type</label>
-          <br />
-          <input type="Checkbox" name="aa" id="Comedy" />
-          <label for="Comedy">Comedy</label>
-          <br />
-          <input type="Checkbox" name="aa" id="Action" />
-          <label for="Action">Action</label>
-          <br />
-          <input type="Checkbox" name="aa" id="Romance" />
-          <label for="Romance">Romance</label>
-        </div>
-        <div class="anadiv">
-          <!--name kısmı aynı olacaktır -->
-          <label for="Gender">Gender</label>
-          <br />
-          <input type="radio" name="aa" id="Male" />
-          <label for="Male">Male</label>
-          <br />
-          <input type="radio" name="aa" id="Famale" />
-          <label for="Female">Female</label>
-          <br />
-          <input type="radio" name="aa" id="Other" />
-          <label for="Other">Other</label>
-        </div>
-        <div class="anadiv" id="feed">
-          <label for="Feed back">Feed back</label>
-          <br />
-          <textarea
-            name="Feed back"
-            id="Any comment"
-            cols="30"
-            rows="5"
-            placeholder="Any comment..."
-          ></textarea>
-        </div>
-        <div class="anadiv">
-          <div class="cbeş">
-            <input class="altı" type="submit" value="Submit" />
+
+          <div class="input-box" id="checkbox">
+            <label for="">Movie Type</label>
+            <br />
+            <input
+              type="checkbox"
+              name="movie1"
+              id="first-check"
+              value="Comedy"
+            />
+            <label for="first-check">Comedy</label>
+            <br />
+            <input
+              type="checkbox"
+              name="movie2"
+              id="second-check"
+              value="Action"
+            />
+            <label for="second-check">Action</label>
+            <br />
+            <input
+              type="checkbox"
+              name="movie3"
+              id="third-check"
+              value="Romance"
+            />
+            <label for="third-check">Romance</label>
           </div>
-        </div>
-      </form>
+
+          <div class="input-box" id="radio">
+            <label for="">Gender</label>
+            <br />
+            <input type="radio" name="gender" id="first-radio" value="Male" />
+            <label for="first-radio">Male</label>
+            <br />
+            <input
+              type="radio"
+              name="gender"
+              id="second-radio"
+              value="Female"
+            />
+            <label for="second-radio">Female</label>
+            <br />
+            <input type="radio" name="gender" id="third-radio" value="Other" />
+            <label for="third-radio">Other</label>
+          </div>
+
+          <div class="input-box">
+            <label for="feedback">Feedback</label>
+            <br />
+            <textarea
+              name="feedback"
+              id="feedback"
+              placeholder="any comment"
+            ></textarea>
+          </div>
+          <div class="form-submit">
+            <!-- <input type="submit" id="form-button" value="Send" /> -->
+            <button type="submit" id="form-button">Send</button>
+          </div>
+        </form>
+      </section>
     </div>
-    </main>
   </body>
 </html>
