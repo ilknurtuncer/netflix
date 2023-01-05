@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.body {
+body{
   background-image: url(./netflix-background-image\ 1.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,8 +15,7 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 #container {
-  max-width: 1240px;
-  /* height: 1036px; */
+  max-width: 1700px;
   background-color: rgba(0, 0, 0, 0.3);
   margin: auto;
   margin-top: 30px;
@@ -36,10 +35,12 @@ span {
 
 #description {
   font-family: "Sorts Mill Goudy", serif;
+  
 }
 
 #header {
   text-align: center;
+  color: white;
 }
 
 textarea {
@@ -53,6 +54,7 @@ textarea {
   margin: auto;
   padding: 30px 40px;
   margin-bottom: 100px;
+  color: white;
 }
 
 #name,
@@ -63,6 +65,7 @@ textarea {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
+  
 }
 
 .input-box {
@@ -74,6 +77,7 @@ textarea {
 #radio {
   margin-top: 40px;
   /* border: 2px solid red; */
+  color: white;
 }
 
 #form-button {
@@ -89,4 +93,5 @@ textarea {
   /* border: 3px solid yellow; */
   width: 160px;
   margin: auto;
+  
 }
